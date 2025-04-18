@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProManage360 - Integrated Project Management Solution</title>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .pricing-tier {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .tier-name {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .tier-price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        .tier-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+        .tier-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .features-grid, .pricing-table {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ProManage360</h1>
+            <p class="tagline">Streamline projects, empower teams, and grow your business—all in one platform.</p>
+            <a href="#signup" class="cta-button">Start Free Trial</a>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <h2>Core Features</h2>
+            
+            <h3>Project Management</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Task Management</h3>
+                    <p>Create, assign, and track tasks with deadlines, priorities, and dependencies.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Timeline & Gantt Charts</h3>
+                    <p>Visualize project schedules, adjust timelines, and monitor critical paths.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Kanban Boards</h3>
+                    <p>Agile-friendly workflows with drag-and-drop task management.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Resource Allocation</h3>
+                    <p>Assign team members, track workloads, and avoid burnout.</p>
+                </div>
+            </div>
+
+            <h3>Team Collaboration</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Real-Time Chat</h3>
+                    <p>Integrated messaging with channels for projects, teams, or topics.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Document Hub</h3>
+                    <p>Centralized file storage with Google Drive, Dropbox integration and version control.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Virtual Workspaces</h3>
+                    <p>Dedicated spaces for cross-functional teams to brainstorm and collaborate.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Time Tracking</h3>
+                    <p>Log hours, generate timesheets, and sync with payroll/billing.</p>
+                </div>
+            </div>
+
+            <h3>Business Management</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Budgeting & Finance</h3>
+                    <p>Track project costs, expenses, and ROI. Set alerts for overspending.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Invoicing</h3>
+                    <p>Auto-generate invoices based on tracked hours or milestone completion.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Client Portal</h3>
+                    <p>Secure space for clients to view progress, share feedback, and approve deliverables.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Analytics & Reporting</h3>
+                    <p>Custom dashboards for KPIs, revenue trends, and team performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing Tiers</h2>
+            <div class="pricing-table">
+                <div class="pricing-tier">
+                    <div class="tier-name">Free</div>
+                    <div class="tier-price">$0</div>
+                    <ul class="tier-features">
+                        <li>Basic task management</li>
+                        <li>5GB storage</li>
+                        <li>2 projects</li>
+                        <li>10 users</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Get Started</a>
+                </div>
+                <div class="pricing-tier" style="border: 2px solid var(--accent);">
+                    <div class="tier-name">Pro</div>
+                    <div class="tier-price">$12<span>/user/month</span></div>
+                    <ul class="tier-features">
+                        <li>Unlimited projects</li>
+                        <li>Gantt charts</li>
+                        <li>Time tracking</li>
+                        <li>50GB storage</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Start Free Trial</a>
+                </div>
+                <div class="pricing-tier">
+                    <div class="tier-name">Business</div>
+                    <div class="tier-price">$25<span>/user/month</span></div>
+                    <ul class="tier-features">
+                        <li>Advanced analytics</li>
+                        <li>Client portals</li>
+                        <li>Built-in CRM</li>
+                        <li>100GB storage</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Start Free Trial</a>
+                </div>
+                <div class="pricing-tier">
+                    <div class="tier-name">Enterprise</div>
+                    <div class="tier-price">Custom</div>
+                    <ul class="tier-features">
+                        <li>Dedicated support</li>
+                        <li>SSO integration</li>
+                        <li>White labeling</li>
+                        <li>Unlimited storage</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container" style="text-align: center;">
+            <h2>Ready to Transform Your Workflow?</h2>
+            <p>Join thousands of teams already managing their projects efficiently with ProManage360.</p>
+            <a href="#signup" class="cta-button" style="font-size: 1.2rem; padding: 1rem 2rem;">Start Your Free Trial Today</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>ProManage360 isn't just a tool—it's your command center for productivity.</p>
+            <p>Whether you're a startup or enterprise, manage projects, teams, and profits with precision. 🚀</p>
+            <p>&copy; 2023 ProManage360. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
